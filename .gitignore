@@ -1,0 +1,9 @@
+# Runtime
+gitbucket.log
+node_modules/
+
+# Google Drive sync temp
+.tmp.driveupload/
+
+# Local overrides
+config.local.json

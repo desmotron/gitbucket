@@ -1,0 +1,12 @@
+{
+  "name": "gitbucket",
+  "version": "2.0.0",
+  "description": "Silent background Git check-in watcher for Windows",
+  "main": "service.js",
+  "scripts": {
+    "start": "node service.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0"
+  }
+}
