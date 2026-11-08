@@ -2,6 +2,11 @@
 
 Automatically commits any folder to Git — no terminal required. Drop a shortcut into a watch folder and GitBucket handles the rest silently in the background.
 
+> [!IMPORTANT]
+> **Your drop folder is `C:\GitCheckin`.** That's the folder you drag projects into. `install.bat` creates it, opens it for you, and puts a **GitCheckin** shortcut on your Desktop so it's always one click away.
+
+![How GitBucket works: right-drag a project folder into C:\GitCheckin, choose "Create shortcuts here", and GitBucket commits it](docs/how-it-works.svg)
+
 ---
 
 ## How It Works
@@ -30,7 +35,7 @@ That's it. GitBucket will now start automatically every time you log in.
 
 **Steps:**
 
-1. Open `C:\GitCheckin` in one Explorer window and your project folder in another (so you can see both)
+1. Open `C:\GitCheckin` (double-click the **GitCheckin** shortcut on your Desktop) in one Explorer window and your project folder in another, so you can see both
 2. **Right-click and hold** your project folder
 3. Drag it into `C:\GitCheckin`
 4. Release — a context menu appears

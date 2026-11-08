@@ -10,6 +10,10 @@ echo.
 echo Creating watch folder C:\GitCheckin...
 mkdir "C:\GitCheckin" 2>nul
 
+:: Put a "GitCheckin" shortcut on the Desktop so the drop folder is always one click away
+echo Adding GitCheckin shortcut to your Desktop...
+powershell -NoProfile -Command "$s=(New-Object -ComObject WScript.Shell).CreateShortcut([Environment]::GetFolderPath('Desktop')+'\GitCheckin.lnk'); $s.TargetPath='C:\GitCheckin'; $s.Description='Right-drag a project folder here to commit it'; $s.Save()"
+
 :: Install npm dependencies
 echo Installing dependencies...
 cd /d "%SCRIPT_DIR%"
@@ -34,4 +38,6 @@ echo   In Windows Explorer, right-drag any project folder into C:\GitCheckin
 echo   Select "Create shortcut here" from the menu that appears.
 echo   GitBucket will git init (if needed) and commit all changes automatically.
 echo.
+echo Opening C:\GitCheckin now - this is your drop folder.
+start "" explorer "C:\GitCheckin"
 pause
