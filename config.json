@@ -1,3 +1,5 @@
 {
-  "watchFolders": ["C:\\GitCheckin"]
+  "watchFolders": ["C:\\GitCheckin"],
+  "branch": "current",
+  "safetyChecks": true
 }
